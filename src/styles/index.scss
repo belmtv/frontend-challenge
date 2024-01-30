@@ -10,7 +10,12 @@ body {
 }
 
 .page-default {
-  margin: 50px 62px;
+  margin: 50px 62px 0;
   height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+  .page-default {
+    margin: 30px 42px
+  }
+}

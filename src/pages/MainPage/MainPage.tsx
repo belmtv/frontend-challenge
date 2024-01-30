@@ -3,6 +3,7 @@ import { $catsList, fetchAllCats } from './model'
 import { useEffect } from 'react'
 import { CardList } from '../../components/CardList'
 import { useInfiniteScroll } from '../../hooks/useInfiniteScroll'
+import { Loading } from '../../components/Loading'
 
 export const MainPage = () => {
     const catsList = useUnit($catsList)
@@ -16,24 +17,22 @@ export const MainPage = () => {
         setLoading(false)
     }, [catsList])
 
-    if (!catsList) return <div>Loading...</div>
+    if (!catsList) return <Loading />
 
     return (
-        <>
-            <div className="page-default">
-                <CardList cards={catsList} />
-                {loading && (
-                    <div
-                        style={{
-                            display: 'flex',
-                            margin: '50px auto 50px',
-                            justifyContent: 'center',
-                        }}
-                    >
-                        ...загружаем еще котиков...
-                    </div>
-                )}
-            </div>
-        </>
+        <div className="page-default">
+            <CardList cards={catsList} />
+            {loading && (
+                <div
+                    style={{
+                        display: 'flex',
+                        margin: '50px auto',
+                        justifyContent: 'center',
+                    }}
+                >
+                    ...загружаем еще котиков...
+                </div>
+            )}
+        </div>
     )
 }

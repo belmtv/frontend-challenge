@@ -11,6 +11,12 @@
     padding: 0 64px 0 64px;
 }
 
+@media screen and (max-width: 768px) {
+    .blockButton > a > button{
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 367px) {
     .block {
         justify-content: center;

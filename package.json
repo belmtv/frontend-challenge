@@ -30,7 +30,8 @@
     "effector-react": "^23.1.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.7.7",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-loader-spinner": "^6.1.6"
   },
   "devDependencies": {
     "@types/node": "^20.11.10",
