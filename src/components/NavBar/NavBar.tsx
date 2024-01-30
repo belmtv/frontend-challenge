@@ -23,6 +23,7 @@ export const NavBar = () => {
                         color="white"
                         isActive={activeButton === ButtonType.AllCats}
                         onClick={() => handleButtonClick(ButtonType.AllCats)}
+                        backgroundColor={'transparent'}
                     >
                         Все котики
                     </Button>
@@ -32,6 +33,7 @@ export const NavBar = () => {
                         color="white"
                         isActive={activeButton === ButtonType.FavCats}
                         onClick={() => handleButtonClick(ButtonType.FavCats)}
+                        backgroundColor={'transparent'}
                     >
                         Любимые котики
                     </Button>
