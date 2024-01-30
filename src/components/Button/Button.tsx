@@ -23,7 +23,7 @@ type ButtonProps = {
 
 export const Button: FC<ButtonProps> = ({
     color,
-    backgroundColor = BackgroundColor.transparent,
+    backgroundColor,
     children,
     isActive,
     onClick,

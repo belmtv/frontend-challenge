@@ -12,12 +12,6 @@ export const $catsList = createStore<Cat[] | null>(null)
 
 export const setLikedCard = createEvent<Cat | null>(null)
 
-export const loadMoreCats = createEffect<{}, Cat[]>(async () => {
-    const { data } =
-        await apiServise(/* дополнительные параметры, если необходимо */)
-    return data
-})
-
 $catsList
     .on(fetchAllCats.doneData, (state, newData) => {
         const updatedData = newData.map((el) => ({
