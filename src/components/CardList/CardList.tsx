@@ -1,6 +1,6 @@
 import { Cat } from '../../pages/MainPage/model/types'
 import styles from './CardList.module.scss'
-import { Card } from '../Card/Card'
+import { Card } from '../Card'
 
 type Cards = {
     cards: Cat[]

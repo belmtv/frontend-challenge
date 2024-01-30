@@ -1,5 +1,5 @@
 import styles from './NavBar.module.scss'
-import { Button } from '../Button/Button'
+import { Button } from '../Button'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -9,7 +9,9 @@ enum ButtonType {
 }
 
 export const NavBar = () => {
-    const [activeButton, setActiveButton] = useState<string | null>(null)
+    const [activeButton, setActiveButton] = useState<string | null>(
+        ButtonType.AllCats
+    )
 
     const handleButtonClick = (buttonName: string) => {
         setActiveButton(buttonName)
