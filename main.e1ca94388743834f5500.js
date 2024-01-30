@@ -223,7 +223,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n__webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\nvar NavBar_1 = __webpack_require__(/*! ./components/NavBar/NavBar */ \"./src/components/NavBar/NavBar.tsx\");\nvar react_router_dom_1 = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\nvar MainPage_1 = __webpack_require__(/*! ./pages/MainPage/MainPage */ \"./src/pages/MainPage/MainPage.tsx\");\nvar FavoritesPage_1 = __webpack_require__(/*! ./pages/FavoritesPage/FavoritesPage */ \"./src/pages/FavoritesPage/FavoritesPage.tsx\");\nvar App = function () {\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { children: [(0, jsx_runtime_1.jsx)(NavBar_1.NavBar, {}), (0, jsx_runtime_1.jsxs)(react_router_dom_1.Routes, { children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: '/frontend-challenge/', element: (0, jsx_runtime_1.jsx)(MainPage_1.MainPage, {}), index: true }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: '/frontend-challenge/favorites', element: (0, jsx_runtime_1.jsx)(FavoritesPage_1.FavoritesPage, {}) })] })] }));\n};\nexports.App = App;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/App.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n__webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\nvar NavBar_1 = __webpack_require__(/*! ./components/NavBar */ \"./src/components/NavBar/index.ts\");\nvar react_router_dom_1 = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\nvar MainPage_1 = __webpack_require__(/*! ./pages/MainPage */ \"./src/pages/MainPage/index.ts\");\nvar FavoritesPage_1 = __webpack_require__(/*! ./pages/FavoritesPage */ \"./src/pages/FavoritesPage/index.ts\");\nvar App = function () {\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { children: [(0, jsx_runtime_1.jsx)(NavBar_1.NavBar, {}), (0, jsx_runtime_1.jsxs)(react_router_dom_1.Routes, { children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: '/frontend-challenge/', element: (0, jsx_runtime_1.jsx)(MainPage_1.MainPage, {}), index: true }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: '/frontend-challenge/favorites', element: (0, jsx_runtime_1.jsx)(FavoritesPage_1.FavoritesPage, {}) })] })] }));\n};\nexports.App = App;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/App.tsx?");
 
 /***/ }),
 
@@ -249,6 +249,17 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 
 /***/ }),
 
+/***/ "./src/components/Button/index.ts":
+/*!****************************************!*\
+  !*** ./src/components/Button/index.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Button = void 0;\nvar Button_1 = __webpack_require__(/*! ./Button */ \"./src/components/Button/Button.tsx\");\nObject.defineProperty(exports, \"Button\", ({ enumerable: true, get: function () { return Button_1.Button; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/Button/index.ts?");
+
+/***/ }),
+
 /***/ "./src/components/CardList/CardList.tsx":
 /*!**********************************************!*\
   !*** ./src/components/CardList/CardList.tsx ***!
@@ -256,7 +267,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardList = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar CardList_module_scss_1 = __importDefault(__webpack_require__(/*! ./CardList.module.scss */ \"./src/components/CardList/CardList.module.scss\"));\nvar Card_1 = __webpack_require__(/*! ../Card/Card */ \"./src/components/Card/Card.tsx\");\nvar CardList = function (_a) {\n    var cards = _a.cards;\n    return ((0, jsx_runtime_1.jsx)(\"div\", { className: CardList_module_scss_1.default.block, children: cards === null || cards === void 0 ? void 0 : cards.map(function (el) { return (0, jsx_runtime_1.jsx)(Card_1.Card, { Card: el }, el.id); }) }));\n};\nexports.CardList = CardList;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/CardList/CardList.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardList = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar CardList_module_scss_1 = __importDefault(__webpack_require__(/*! ./CardList.module.scss */ \"./src/components/CardList/CardList.module.scss\"));\nvar Card_1 = __webpack_require__(/*! ../Card */ \"./src/components/Card/index.ts\");\nvar CardList = function (_a) {\n    var cards = _a.cards;\n    return ((0, jsx_runtime_1.jsx)(\"div\", { className: CardList_module_scss_1.default.block, children: cards === null || cards === void 0 ? void 0 : cards.map(function (el) { return (0, jsx_runtime_1.jsx)(Card_1.Card, { Card: el }, el.id); }) }));\n};\nexports.CardList = CardList;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/CardList/CardList.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/CardList/index.ts":
+/*!******************************************!*\
+  !*** ./src/components/CardList/index.ts ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardList = void 0;\nvar CardList_1 = __webpack_require__(/*! ./CardList */ \"./src/components/CardList/CardList.tsx\");\nObject.defineProperty(exports, \"CardList\", ({ enumerable: true, get: function () { return CardList_1.CardList; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/CardList/index.ts?");
 
 /***/ }),
 
@@ -271,6 +293,17 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 
 /***/ }),
 
+/***/ "./src/components/Card/index.ts":
+/*!**************************************!*\
+  !*** ./src/components/Card/index.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Card = void 0;\nvar Card_1 = __webpack_require__(/*! ./Card */ \"./src/components/Card/Card.tsx\");\nObject.defineProperty(exports, \"Card\", ({ enumerable: true, get: function () { return Card_1.Card; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/Card/index.ts?");
+
+/***/ }),
+
 /***/ "./src/components/NavBar/NavBar.tsx":
 /*!******************************************!*\
   !*** ./src/components/NavBar/NavBar.tsx ***!
@@ -278,7 +311,40 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.NavBar = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar NavBar_module_scss_1 = __importDefault(__webpack_require__(/*! ./NavBar.module.scss */ \"./src/components/NavBar/NavBar.module.scss\"));\nvar Button_1 = __webpack_require__(/*! ../Button/Button */ \"./src/components/Button/Button.tsx\");\nvar react_router_dom_1 = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\nvar react_1 = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ButtonType;\n(function (ButtonType) {\n    ButtonType[\"AllCats\"] = \"allCats\";\n    ButtonType[\"FavCats\"] = \"favCats\";\n})(ButtonType || (ButtonType = {}));\nvar NavBar = function () {\n    var _a = (0, react_1.useState)(null), activeButton = _a[0], setActiveButton = _a[1];\n    var handleButtonClick = function (buttonName) {\n        setActiveButton(buttonName);\n    };\n    return ((0, jsx_runtime_1.jsx)(\"div\", { className: NavBar_module_scss_1.default.block, children: (0, jsx_runtime_1.jsxs)(\"div\", { className: NavBar_module_scss_1.default.blockButton, children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Link, { to: '/frontend-challenge/', children: (0, jsx_runtime_1.jsx)(Button_1.Button, { color: \"white\", isActive: activeButton === ButtonType.AllCats, onClick: function () { return handleButtonClick(ButtonType.AllCats); }, backgroundColor: 'transparent', children: \"\\u0412\\u0441\\u0435 \\u043A\\u043E\\u0442\\u0438\\u043A\\u0438\" }) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Link, { to: '/frontend-challenge/favorites', children: (0, jsx_runtime_1.jsx)(Button_1.Button, { color: \"white\", isActive: activeButton === ButtonType.FavCats, onClick: function () { return handleButtonClick(ButtonType.FavCats); }, backgroundColor: 'transparent', children: \"\\u041B\\u044E\\u0431\\u0438\\u043C\\u044B\\u0435 \\u043A\\u043E\\u0442\\u0438\\u043A\\u0438\" }) })] }) }));\n};\nexports.NavBar = NavBar;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/NavBar/NavBar.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.NavBar = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar NavBar_module_scss_1 = __importDefault(__webpack_require__(/*! ./NavBar.module.scss */ \"./src/components/NavBar/NavBar.module.scss\"));\nvar Button_1 = __webpack_require__(/*! ../Button */ \"./src/components/Button/index.ts\");\nvar react_router_dom_1 = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\nvar react_1 = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ButtonType;\n(function (ButtonType) {\n    ButtonType[\"AllCats\"] = \"allCats\";\n    ButtonType[\"FavCats\"] = \"favCats\";\n})(ButtonType || (ButtonType = {}));\nvar NavBar = function () {\n    var _a = (0, react_1.useState)(ButtonType.AllCats), activeButton = _a[0], setActiveButton = _a[1];\n    var handleButtonClick = function (buttonName) {\n        setActiveButton(buttonName);\n    };\n    return ((0, jsx_runtime_1.jsx)(\"div\", { className: NavBar_module_scss_1.default.block, children: (0, jsx_runtime_1.jsxs)(\"div\", { className: NavBar_module_scss_1.default.blockButton, children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Link, { to: '/frontend-challenge/', children: (0, jsx_runtime_1.jsx)(Button_1.Button, { color: \"white\", isActive: activeButton === ButtonType.AllCats, onClick: function () { return handleButtonClick(ButtonType.AllCats); }, backgroundColor: 'transparent', children: \"\\u0412\\u0441\\u0435 \\u043A\\u043E\\u0442\\u0438\\u043A\\u0438\" }) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Link, { to: '/frontend-challenge/favorites', children: (0, jsx_runtime_1.jsx)(Button_1.Button, { color: \"white\", isActive: activeButton === ButtonType.FavCats, onClick: function () { return handleButtonClick(ButtonType.FavCats); }, backgroundColor: 'transparent', children: \"\\u041B\\u044E\\u0431\\u0438\\u043C\\u044B\\u0435 \\u043A\\u043E\\u0442\\u0438\\u043A\\u0438\" }) })] }) }));\n};\nexports.NavBar = NavBar;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/NavBar/NavBar.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/NavBar/index.ts":
+/*!****************************************!*\
+  !*** ./src/components/NavBar/index.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.NavBar = void 0;\nvar NavBar_1 = __webpack_require__(/*! ./NavBar */ \"./src/components/NavBar/NavBar.tsx\");\nObject.defineProperty(exports, \"NavBar\", ({ enumerable: true, get: function () { return NavBar_1.NavBar; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/components/NavBar/index.ts?");
+
+/***/ }),
+
+/***/ "./src/hooks/useInfiniteScroll/index.ts":
+/*!**********************************************!*\
+  !*** ./src/hooks/useInfiniteScroll/index.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.useInfiniteScroll = void 0;\nvar useInfiniteScroll_1 = __webpack_require__(/*! ./useInfiniteScroll */ \"./src/hooks/useInfiniteScroll/useInfiniteScroll.tsx\");\nObject.defineProperty(exports, \"useInfiniteScroll\", ({ enumerable: true, get: function () { return useInfiniteScroll_1.useInfiniteScroll; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/hooks/useInfiniteScroll/index.ts?");
+
+/***/ }),
+
+/***/ "./src/hooks/useInfiniteScroll/useInfiniteScroll.tsx":
+/*!***********************************************************!*\
+  !*** ./src/hooks/useInfiniteScroll/useInfiniteScroll.tsx ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.useInfiniteScroll = void 0;\nvar model_1 = __webpack_require__(/*! ../../pages/MainPage/model */ \"./src/pages/MainPage/model/index.ts\");\nvar react_1 = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar useInfiniteScroll = function () {\n    var _a = (0, react_1.useState)(false), loading = _a[0], setLoading = _a[1];\n    (0, react_1.useEffect)(function () {\n        var isBottom = function () {\n            return (window.innerHeight + window.scrollY >=\n                document.documentElement.scrollHeight);\n        };\n        var loadMoreCats = function () {\n            if (isBottom() && !loading) {\n                setLoading(true);\n                (0, model_1.fetchAllCats)({});\n            }\n        };\n        window.addEventListener('scroll', loadMoreCats);\n        return function () {\n            window.removeEventListener('scroll', loadMoreCats);\n        };\n    }, [loading]);\n    return { loading: loading, setLoading: setLoading };\n};\nexports.useInfiniteScroll = useInfiniteScroll;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/hooks/useInfiniteScroll/useInfiniteScroll.tsx?");
 
 /***/ }),
 
@@ -304,6 +370,17 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 
 /***/ }),
 
+/***/ "./src/pages/FavoritesPage/index.ts":
+/*!******************************************!*\
+  !*** ./src/pages/FavoritesPage/index.ts ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.FavoritesPage = void 0;\nvar FavoritesPage_1 = __webpack_require__(/*! ./FavoritesPage */ \"./src/pages/FavoritesPage/FavoritesPage.tsx\");\nObject.defineProperty(exports, \"FavoritesPage\", ({ enumerable: true, get: function () { return FavoritesPage_1.FavoritesPage; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/pages/FavoritesPage/index.ts?");
+
+/***/ }),
+
 /***/ "./src/pages/FavoritesPage/model/index.ts":
 /*!************************************************!*\
   !*** ./src/pages/FavoritesPage/model/index.ts ***!
@@ -322,7 +399,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.MainPage = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar effector_react_1 = __webpack_require__(/*! effector-react */ \"./node_modules/effector-react/effector-react.cjs.js\");\nvar model_1 = __webpack_require__(/*! ./model */ \"./src/pages/MainPage/model/index.ts\");\nvar react_1 = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar CardList_1 = __webpack_require__(/*! ../../components/CardList/CardList */ \"./src/components/CardList/CardList.tsx\");\nvar MainPage = function () {\n    var catsList = (0, effector_react_1.useUnit)(model_1.$catsList);\n    var _a = (0, react_1.useState)(false), loading = _a[0], setLoading = _a[1];\n    (0, react_1.useEffect)(function () {\n        var isBottom = function () {\n            return (window.innerHeight + window.scrollY >=\n                document.documentElement.scrollHeight);\n        };\n        var loadMoreCats = function () {\n            if (isBottom() && !loading) {\n                setLoading(true);\n                (0, model_1.fetchAllCats)({});\n            }\n        };\n        window.addEventListener('scroll', loadMoreCats);\n        return function () {\n            window.removeEventListener('scroll', loadMoreCats);\n        };\n    }, [loading]);\n    (0, react_1.useEffect)(function () {\n        setLoading(false);\n    }, [catsList]);\n    (0, react_1.useEffect)(function () {\n        (0, model_1.fetchAllCats)({});\n    }, []);\n    if (!catsList)\n        return (0, jsx_runtime_1.jsx)(\"div\", { children: \"Loading...\" });\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { className: \"page-default\", children: [(0, jsx_runtime_1.jsx)(CardList_1.CardList, { cards: catsList }), loading && ((0, jsx_runtime_1.jsx)(\"div\", { style: {\n                    display: 'flex',\n                    margin: '50px auto',\n                    justifyContent: 'center',\n                }, children: \"...\\u0437\\u0430\\u0433\\u0440\\u0443\\u0436\\u0430\\u0435\\u043C \\u0435\\u0449\\u0435 \\u043A\\u043E\\u0442\\u0438\\u043A\\u043E\\u0432...\" }))] }));\n};\nexports.MainPage = MainPage;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/pages/MainPage/MainPage.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.MainPage = void 0;\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar effector_react_1 = __webpack_require__(/*! effector-react */ \"./node_modules/effector-react/effector-react.cjs.js\");\nvar model_1 = __webpack_require__(/*! ./model */ \"./src/pages/MainPage/model/index.ts\");\nvar react_1 = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar CardList_1 = __webpack_require__(/*! ../../components/CardList */ \"./src/components/CardList/index.ts\");\nvar useInfiniteScroll_1 = __webpack_require__(/*! ../../hooks/useInfiniteScroll */ \"./src/hooks/useInfiniteScroll/index.ts\");\nvar MainPage = function () {\n    var catsList = (0, effector_react_1.useUnit)(model_1.$catsList);\n    var _a = (0, useInfiniteScroll_1.useInfiniteScroll)(), loading = _a.loading, setLoading = _a.setLoading;\n    (0, react_1.useEffect)(function () {\n        (0, model_1.fetchAllCats)({});\n    }, []);\n    (0, react_1.useEffect)(function () {\n        setLoading(false);\n    }, [catsList]);\n    if (!catsList)\n        return (0, jsx_runtime_1.jsx)(\"div\", { children: \"Loading...\" });\n    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)(\"div\", { className: \"page-default\", children: [(0, jsx_runtime_1.jsx)(CardList_1.CardList, { cards: catsList }), loading && ((0, jsx_runtime_1.jsx)(\"div\", { style: {\n                        display: 'flex',\n                        margin: '50px auto 50px',\n                        justifyContent: 'center',\n                    }, children: \"...\\u0437\\u0430\\u0433\\u0440\\u0443\\u0436\\u0430\\u0435\\u043C \\u0435\\u0449\\u0435 \\u043A\\u043E\\u0442\\u0438\\u043A\\u043E\\u0432...\" }))] }) }));\n};\nexports.MainPage = MainPage;\n\n\n//# sourceURL=webpack://frontend-challenge/./src/pages/MainPage/MainPage.tsx?");
+
+/***/ }),
+
+/***/ "./src/pages/MainPage/index.ts":
+/*!*************************************!*\
+  !*** ./src/pages/MainPage/index.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.MainPage = void 0;\nvar MainPage_1 = __webpack_require__(/*! ./MainPage */ \"./src/pages/MainPage/MainPage.tsx\");\nObject.defineProperty(exports, \"MainPage\", ({ enumerable: true, get: function () { return MainPage_1.MainPage; } }));\n\n\n//# sourceURL=webpack://frontend-challenge/./src/pages/MainPage/index.ts?");
 
 /***/ }),
 
