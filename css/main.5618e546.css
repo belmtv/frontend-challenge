@@ -13,8 +13,14 @@ body {
 }
 
 .page-default {
-  margin: 50px 62px;
+  margin: 50px 62px 0;
   height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .page-default {
+    margin: 30px 42px;
+  }
 }
 /*!***************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/NavBar/NavBar.module.scss ***!
@@ -33,6 +39,11 @@ body {
   padding: 0 64px 0 64px;
 }
 
+@media screen and (max-width: 768px) {
+  .sFFxvpqm > a > button {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 367px) {
   .Y1R9w07h {
     justify-content: center;
@@ -48,6 +59,12 @@ body {
   display: grid;
   gap: 50px 30px;
   grid-template-columns: repeat(auto-fill, minmax(min(225px, 100%), 1fr));
+}
+
+@media screen and (max-width: 768px) {
+  .T6w8f5Bm {
+    gap: 30px 20px;
+  }
 }
 /*!***********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/Card/Card.module.scss ***!
