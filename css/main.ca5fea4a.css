@@ -59,6 +59,8 @@ body {
   align-items: flex-end;
   width: 100%;
   height: 225px;
+  transition: all 0.3s;
+  overflow: hidden;
 }
 
 .AbBCB4gH {
@@ -85,8 +87,19 @@ body {
   cursor: pointer;
   bottom: 5%;
   right: 5%;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .Nih_OgsF:hover {
   background-image: url(../e7c4350fe85d1aedb46a.png);
+}
+
+._Rt9kt4j:hover .Nih_OgsF {
+  opacity: 1;
+}
+
+._Rt9kt4j:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
