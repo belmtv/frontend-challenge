@@ -1,5 +1,5 @@
 type CatApiResponse = {
-    breeds: any[] // Пока что не типизируем породы, можно добавить типы по мере необходимости
+    breeds: any[] 
     categories: {
         id: number
         name: string
