@@ -10,3 +10,12 @@
     flex-wrap: wrap;
     padding: 0 64px 0 64px;
 }
+
+@media screen and (max-width: 367px) {
+    .block {
+        justify-content: center;
+    }
+    .blockButton{
+        padding: 0;
+    }
+}
