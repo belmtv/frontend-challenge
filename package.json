@@ -9,7 +9,7 @@
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "predeploy": "rm -rf build && npm run build:prod",
-    "homepage": "https://belmtv.github.io/gh-pages-demo",
+    "homepage": "https://belmtv.github.io/frontend-challenge/",
     "deploy": "npm run build:prod && gh-pages -d dist"
   },
   "repository": {

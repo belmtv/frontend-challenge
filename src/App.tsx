@@ -9,7 +9,7 @@ export const App = () => {
         <div>
             <NavBar />
             <Routes>
-                <Route path={'/'} element={<MainPage />} />
+                <Route path={'/'} element={<MainPage />} index />
                 <Route path={'/favorites'} element={<FavoritesPage />} />
             </Routes>
         </div>
