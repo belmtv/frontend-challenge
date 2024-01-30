@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --env port=3000",
-    "build:prod": "webpack --env mode=production",
+    "build:prod": "webpack --env mode=production shx cp build/index.html build/404.html",
     "build:dev": "webpack --env mode=development",
     "predeploy": "rm -rf build && npm run build:prod",
     "homepage": "https://belmtv.github.io/frontend-challenge/",
@@ -47,6 +47,7 @@
     "react-router-dom": "^6.21.3",
     "sass": "^1.70.0",
     "sass-loader": "^14.0.0",
+    "shx": "^0.3.4",
     "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
