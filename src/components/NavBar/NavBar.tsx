@@ -18,7 +18,7 @@ export const NavBar = () => {
     return (
         <div className={styles.block}>
             <div className={styles.blockButton}>
-                <Link to={'/'}>
+                <Link to={'/frontend-challenge/'}>
                     <Button
                         color="white"
                         isActive={activeButton === ButtonType.AllCats}
@@ -27,7 +27,7 @@ export const NavBar = () => {
                         Все котики
                     </Button>
                 </Link>
-                <Link to={'/favorites'}>
+                <Link to={'/frontend-challenge/favorites'}>
                     <Button
                         color="white"
                         isActive={activeButton === ButtonType.FavCats}
