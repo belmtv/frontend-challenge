@@ -9,9 +9,7 @@ type Cards = {
 export const CardList = ({ cards }: Cards) => {
     return (
         <div className={styles.block}>
-            {cards.map((el) => (
-                <Card key={el.id} Card={el} />
-            ))}
+            {cards?.map((el) => <Card key={el.id} Card={el} />)}
         </div>
     )
 }

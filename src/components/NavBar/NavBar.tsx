@@ -14,6 +14,7 @@ export const NavBar = () => {
     const handleButtonClick = (buttonName: string) => {
         setActiveButton(buttonName)
     }
+
     return (
         <div className={styles.block}>
             <div className={styles.blockButton}>

@@ -1,9 +1,8 @@
 import axios from 'axios'
-import * as process from 'process'
 
 export const apiServise = async () => {
     const resp = await axios.get(
-        `https://api.thecatapi.com/v1/images/search?limit=15`,
+        `https://api.thecatapi.com/v1/images/search?limit=30`,
         {
             headers: {
                 'Content-type': 'application/json',

@@ -1,4 +1,43 @@
-.image {
-  width: 225px;
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
   height: 225px;
 }
+
+.image {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+$likeImage: url('../../../images/favorite.png');
+$unlikeImage: url('../../../images/favorite_border.png');
+
+
+.imageActiveLike {
+  background-image: $likeImage;
+}
+
+.imageDefaultLike {
+  background-image: $unlikeImage;
+}
+
+
+.imageLike {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  bottom: 5%;
+  right: 5%;
+}
+
+.imageLike:hover {
+  background-image: $likeImage;
+ }

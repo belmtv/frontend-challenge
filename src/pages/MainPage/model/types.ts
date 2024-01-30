@@ -13,4 +13,4 @@ type CatApiResponse = {
 export type Cat = Omit<
     CatApiResponse,
     'breeds' | 'categories' | 'width' | 'height'
->
+> & { liked: boolean }
