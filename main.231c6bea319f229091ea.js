@@ -311,7 +311,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.$favoriteCards = void 0;\nvar effector_1 = __webpack_require__(/*! effector */ \"./node_modules/effector/effector.cjs.js\");\nexports.$favoriteCards = (0, effector_1.createStore)(null);\nexports.$favoriteCards.watch(function (el) { return console.log(el); });\n\n\n//# sourceURL=webpack://frontend-challenge/./src/pages/FavoritesPage/model/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.$favoriteCards = void 0;\nvar effector_1 = __webpack_require__(/*! effector */ \"./node_modules/effector/effector.cjs.js\");\nexports.$favoriteCards = (0, effector_1.createStore)(null);\n\n\n//# sourceURL=webpack://frontend-challenge/./src/pages/FavoritesPage/model/index.ts?");
 
 /***/ }),
 
