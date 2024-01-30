@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .page-default {
   margin: 50px 62px;
   height: 100vh;
 }
+

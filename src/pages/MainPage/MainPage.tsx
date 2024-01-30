@@ -40,7 +40,7 @@ export const MainPage = () => {
     if (!catsList) return <div>Loading...</div>
 
     return (
-        <div style={{ margin: '50px 62px', height: '100vh' }}>
+        <div className="page-default">
             <CardList cards={catsList} />
             {loading && (
                 <div
